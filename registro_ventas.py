@@ -12,7 +12,7 @@ else:
 
 total = valor - descuento
 
-print ("-------RESUEMN DE VETA-------")
+print ("-------RESUMEN DE VETA-------")
 print (f"cliente: {cliente}")
 print (f"precio: $ {precio}")
 print (f"cantidad: {cantidad}")
