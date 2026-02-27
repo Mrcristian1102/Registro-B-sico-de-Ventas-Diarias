@@ -19,6 +19,3 @@ Con este proyecto estoy practicando:
 - Entrada de datos con `input()`
 - Operaciones matemáticas
 - Estructura básica de un programa en Python
-
-```bash
-python registro_ventas.py
