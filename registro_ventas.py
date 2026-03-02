@@ -1,20 +1,26 @@
-cliente = input("Nombre del cliente: ")
-precio = float(input("Precio unitario del producto: "))
-cantidad = int(input("Cantidad de productos comprados: "))
-cliente_VIP = input("El cliente tiene membresia VIP (si/no)")
+while True:
+    cliente = input("Nombre del cliente: ")
+    precio = float(input("Precio unitario del producto: "))
+    cantidad = int(input("Cantidad de productos comprados: "))
+    cliente_VIP = input("El cliente tiene membresía VIP (si/no): ").lower()
 
-valor = precio * cantidad
+    valor = precio * cantidad
 
-if cliente_VIP == "si":
-    descuento = valor * 0.10
-else:
-    descuento = 0.0
+    if cliente_VIP == "si":
+        descuento = valor * 0.10
+    else:
+        descuento = 0.0
 
-total = valor - descuento
+    total = valor - descuento
 
-print ("-------RESUMEN DE VETA-------")
-print (f"cliente: {cliente}")
-print (f"precio: $ {precio}")
-print (f"cantidad: {cantidad}")
-print (f"descuento aplicado: $ {descuento}")
-print (f"total a pagar: $ {total}")
+    print("\n---RESUMEN DE VENTA")
+    print(f"Cliente: {cliente}")
+    print(f"Subtotal: $ {valor}")
+    print(f"Descuento aplicado: $ {descuento}")
+    print(f"Total a pagar: $ {total}")
+
+    continuar = input("\n¿Desea registrar otra venta? (si/no): ").lower()
+    
+    if continuar != "si":
+        print("Muchas gracias.")
+        break
