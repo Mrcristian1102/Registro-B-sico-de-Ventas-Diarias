@@ -1,21 +1,28 @@
-## Registro de Ventas Diarias
+# Registro basico de ventas diarias
 
-Este es un programa sencillo hecho en Python para registrar ventas desde la consola.
+## Descripción
+Este proyecto en un programa de python que permite registrar una venta, aplicar reglas basicas del negocio
+y mostrar un resumen claro en consola.
 
-## ¿Qué hace el programa?
+## Funcionalidades
+El sistema solicita al usuario:
 
-El programa permite:
+-Nombre del cliente
+-Precio unitario del producto
+-Cantidad de productos comprados
+-Confirmación de si el cliente tiene membresía VIP
 
-- Ingresar el nombre del producto
-- Ingresar la cantidad vendida
-- Ingresar el precio del producto
-- Calcular el total de la venta
+## Requisitos técnicos
 
-## ¿Qué estoy practicando?
+-Uso de variables
+-Tipos de datos básicos (int, float, str, bool)
+-Entrada de datos por consola
+-Salida de información por consola
 
-Con este proyecto estoy practicando:
+## Resultado esperado
+Al finalizar la ejecución, el programa muestra:
 
-- Uso de variables
-- Entrada de datos con `input()`
-- Operaciones matemáticas
-- Estructura básica de un programa en Python
+-Nombre del cliente
+-Subtotal
+-Valor del descuento
+-Total final a pagar
