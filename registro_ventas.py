@@ -1,7 +1,13 @@
 while True:
     cliente = input("Nombre del cliente: ")
-    precio = float(input("Precio unitario del producto: "))
-    cantidad = int(input("Cantidad de productos comprados: "))
+    
+    try:
+        precio = float(input("Precio unitario del producto: "))
+        cantidad = int(input("Cantidad de productos comprados: "))
+    except ValueError:
+        print("Escribe un número, no una letra.")
+        continue
+
     cliente_VIP = input("El cliente tiene membresía VIP (si/no): ").lower()
 
     valor = precio * cantidad
@@ -13,7 +19,7 @@ while True:
 
     total = valor - descuento
 
-    print("\n---RESUMEN DE VENTA")
+    print("---RESUMEN DE VENTA")
     print(f"Cliente: {cliente}")
     print(f"Subtotal: $ {valor}")
     print(f"Descuento aplicado: $ {descuento}")
