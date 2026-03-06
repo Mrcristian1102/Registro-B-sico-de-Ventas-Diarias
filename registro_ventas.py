@@ -12,7 +12,7 @@ while True:   #la condición siempre sera verdadera
 
     valor = precio * cantidad
 
-    if cliente_VIP == "si":
+    if cliente_VIP == "si":   #if= significa si se cumple la funcion, aqui se verifica si el cliente es VIP
         descuento = valor * 0.10
     else:
         descuento = 0.0
